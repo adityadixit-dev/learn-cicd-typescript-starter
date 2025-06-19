@@ -6,7 +6,7 @@
   </head>
 
   <body class="section">
-    <h1>Notely</h1>
+    <h1>Welcome to Notely</h1>
 
     <div id="userCreationContainer" class="section">
       <input id="nameField" type="text" placeholder="Enter your name" />
@@ -97,8 +97,7 @@
         currentUser = null;
 
         // When a user logs out, show the user creation section and hide the note section
-        document.getElementById("userCreationContainer").style.display =
-          "block";
+        document.getElementById("userCreationContainer").style.display = "block";
         document.getElementById("noteSection").style.display = "none";
       }
 
@@ -117,8 +116,7 @@
         document.getElementById("noteSection").style.display = "flex";
 
         // Display a greeting message
-        document.getElementById("greetingMessage").textContent =
-          `Hello ${user.name}!`;
+        document.getElementById("greetingMessage").textContent = `Hello ${user.name}!`;
       }
 
       async function fetchWithAlert(url, options) {
